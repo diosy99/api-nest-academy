@@ -18,11 +18,12 @@
   },
   "scripts": {
     "postinstall": "link-module-alias",
-    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "mocha:run" : "mocha tests/scenarios --reporter-options reportDir=reports"
   },
-  "_moduleAliases" : {
+  "_moduleAliases": {
     "$root": "tests",
-    "$helper" :"tests/helper"
+    "$helper": "tests/helper"
   },
-  "type" : "module" 
+  "type": "module"
 }
